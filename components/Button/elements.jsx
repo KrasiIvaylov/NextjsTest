@@ -1,7 +1,5 @@
 import styled, { css } from "styled-components";
 import { SectionInnerHeading } from "~/components";
-import { useHistory } from 'react-router';
-import { createBrowserHistory } from "history";
 
 const outlinedVariantButton = css`
   background-color: transparent;
@@ -44,7 +42,7 @@ const buttonVariants = {
   text: textVariantButton,
 };
 
-function toggleTrueFalse(){
+function toggleTrueFalse() {
   window.location.replace('/#AgencySection');
 }
 

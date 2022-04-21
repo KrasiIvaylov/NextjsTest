@@ -10,10 +10,6 @@ import {
   StyledImageContainer,
 } from "./elements";
 
-function onclick(){
-  console.log('Hello');
-}
-
 export const Hero = ({ image, title, description, ctaText, ...props }) => {
   return (
     <StyledContainer {...props}>

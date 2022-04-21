@@ -9,7 +9,7 @@ import {
   SectionParagraph,
 } from "~/components";
 
-export const StyledContainer = styled(({height, ...props }) => (
+export const StyledContainer = styled(({ height, ...props }) => (
   <SectionContainer {...props} />
 ))`
   flex-wrap: wrap;
