@@ -8,8 +8,8 @@ export const CardContainer = styled(({ ...props }) => <div {...props} />)`
   align-items: center;
   margin-bottom: 25px;
   border-radius: 8px;
-  cursor: pointer;
   border: 2px solid transparent;
+  cursor: pointer;
 
   ${(props) =>
     props.bgColor === 0 &&
