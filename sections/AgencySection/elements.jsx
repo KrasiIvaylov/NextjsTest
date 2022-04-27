@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 import {
   SectionContainer,
   SectionHeading,
@@ -38,7 +37,9 @@ export const StyledTitle = styled((props) => <SectionHeading {...props} />)`
   }
 `;
 
-export const StyledDescription = styled((props) => <SectionSubheading {...props} />)`
+export const StyledDescription = styled((props) => (
+  <SectionSubheading {...props} />
+))`
   margin-bottom: 70px;
   margin-top: 30px;
   @media only screen and (min-width: 2560px) {
@@ -54,7 +55,9 @@ export const StyledDescription = styled((props) => <SectionSubheading {...props}
   }
 `;
 
-export const StyledImageContainer = styled(({ ...props }) => <div {...props} />)`
+export const StyledImageContainer = styled(({ ...props }) => (
+  <div {...props} />
+))`
   max-width: 50%;
   width: 320px;
   @media only screen and (min-width: 2560px) {
@@ -66,7 +69,9 @@ export const StyledImageContainer = styled(({ ...props }) => <div {...props} />)
   }
 `;
 
-export const StyledCardTitle = styled((props) => <SectionInnerHeading {...props} />)`
+export const StyledCardTitle = styled((props) => (
+  <SectionInnerHeading {...props} />
+))`
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 0;
@@ -75,7 +80,7 @@ export const StyledCardTitle = styled((props) => <SectionInnerHeading {...props}
     color: ${({ theme }) => theme.main};
     text-decoration: underline;
   }
-  
+
   @media only screen and (min-width: 2560px) {
     font-size: 32px;
     line-height: 32px;
@@ -89,7 +94,9 @@ export const StyledCardTitle = styled((props) => <SectionInnerHeading {...props}
   }
 `;
 
-export const StyledCardDescription = styled((props) => <SectionParagraph {...props} />)`
+export const StyledCardDescription = styled((props) => (
+  <SectionParagraph {...props} />
+))`
   font-size: 13px;
   margin-top: 0;
   padding-right: 17;
@@ -208,18 +215,20 @@ export const StyledCardText = styled(({ ...props }) => <div {...props} />)`
   flex-direction: column;
 `;
 
-export const StyledBackgroundImgContainer = styled(({ ...props }) => <div {...props} />)`
+export const StyledBackgroundImgContainer = styled(({ ...props }) => (
+  <div {...props} />
+))`
   position: absolute;
   z-index: -1;
   width: 99%;
   height: 70%;
   margin-top: 32px;
-  
+
   @media only screen and (min-width: 2560px) {
     width: 90%;
     height: 100%;
   }
-  @media only screen and (min-width: 1400px) and (max-width: 1500px){
+  @media only screen and (min-width: 1400px) and (max-width: 1500px) {
     width: 90%;
     height: 80%;
   }
@@ -248,4 +257,4 @@ export const Container = styled(({ ...props }) => <div {...props} />)`
   @media only screen and (max-width: 340px) {
     width: 100%;
   }
-  `;
+`;
